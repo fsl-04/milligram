@@ -1,13 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="node_modules/milligram/dist/milligram.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css" integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        header {
+            background-color: #f8f9fa;
+            padding: 1.5rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        nav {
+            display: flex;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #9B4DCA;
+        }
+
+        main .container {
+            display: block;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        main .container>div {
+            flex: 1;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 2rem;
+        }
+
+        .row {
+            display: flex;
+            margin-top: 2rem;
+        }
+
+        .column {
+            flex: 1;
+            padding: 0.5rem;
+            text-align: center;
+            background-color: #f8f9fa;
+            margin: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
+
 <body>
+
+    <header>
+        <div class="container">
+            <div class="logo">FSL04</div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
     <main>
         <div class="container">
             <div>
@@ -58,21 +143,21 @@
                     </tbody>
                 </table>
             </div>
-            <div>
-                <div class="container">
-                    <div class="row">
-                      <div class="column">.column</div>
-                      <div class="column">.column</div>
-                      <div class="column">.column</div>
-                      <div class="column">.column</div>
-                    </div>
-                    <div class="row">
-                      <div class="column">.column</div>
-                      <div class="column column-50 column-offset-25">.column column-50 column-offset-25</div>
-                    </div>
-                  </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="column">.column</div>
+                <div class="column">.column</div>
+                <div class="column">.column</div>
+                <div class="column">.column</div>
+            </div>
+            <div class="row">
+                <div class="column">.column</div>
+                <div class="column column-50 column-offset-25">.column column-50 column-offset-25</div>
             </div>
         </div>
     </main>
 </body>
+
 </html>
